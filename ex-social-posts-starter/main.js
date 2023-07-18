@@ -61,6 +61,8 @@ const POSTS = [
 
 //togliere l'href="#" al pulsante
 
+let miniCounter = 0;
+
 POSTS.forEach(post => {
     const NEW_POST = document.createElement('div');
     NEW_POST.innerHTML += `
@@ -98,6 +100,8 @@ POSTS.forEach(post => {
 
     NEW_POST.querySelector('.js-like-button').addEventListener('click', function likenator() {
         console.log('Working');
+        miniCounter++;
+        console.log(miniCounter);   //così tanto per
 
         NEW_POST.querySelector('.js-like-button').classList.toggle('cornflowerblue');
     })
