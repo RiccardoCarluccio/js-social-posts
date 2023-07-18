@@ -92,4 +92,7 @@ POSTS.forEach(post => {
             </div>            
         </div>
     `
+
+    const CONTAINER = document.getElementById('container');
+    CONTAINER.append(NEW_POST);
 })
