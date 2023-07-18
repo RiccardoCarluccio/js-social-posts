@@ -59,6 +59,8 @@ const POSTS = [
 //ID 4 non ha un'immagine profilo
 //da fare la differenza di date e settare quando è stato creato il post
 
+//togliere l'href="#" al pulsante
+
 POSTS.forEach(post => {
     const NEW_POST = document.createElement('div');
     NEW_POST.innerHTML += `
@@ -81,7 +83,7 @@ POSTS.forEach(post => {
             <div class="post__footer">
                 <div class="likes js-likes">
                     <div class="likes__cta">
-                        <a class="like-button  js-like-button" href="#" data-postid="1">
+                        <a class="like-button js-like-button" href="#" data-postid="1">
                             <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>
                             <span class="like-button__label">Mi Piace</span>
                         </a>
