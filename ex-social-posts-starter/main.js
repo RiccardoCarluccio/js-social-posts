@@ -97,7 +97,7 @@ POSTS.forEach(post => {
     `
 
     NEW_POST.querySelector('.js-like-button').addEventListener('click', function likenator() {
-        
+        console.log('Working');
     })
 
     const CONTAINER = document.getElementById('container');
