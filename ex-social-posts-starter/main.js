@@ -96,6 +96,10 @@ POSTS.forEach(post => {
         </div>
     `
 
+    NEW_POST.querySelector('.js-like-button').addEventListener('click', function likenator() {
+        
+    })
+
     const CONTAINER = document.getElementById('container');
     CONTAINER.append(NEW_POST);
 })
