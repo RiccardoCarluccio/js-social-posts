@@ -101,7 +101,7 @@ POSTS.forEach(post => {
     NEW_POST.querySelector('.js-like-button').addEventListener('click', function likenator() {
         console.log('Working');
         miniCounter++;
-        console.log(miniCounter);   //così, tanto per
+        console.log(miniCounter);   //così, tanto per. Check localStorage per farlo rimanere
 
         NEW_POST.querySelector('.js-like-button').classList.toggle('cornflowerblue');
     })
