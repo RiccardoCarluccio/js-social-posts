@@ -98,6 +98,8 @@ POSTS.forEach(post => {
 
     NEW_POST.querySelector('.js-like-button').addEventListener('click', function likenator() {
         console.log('Working');
+
+        NEW_POST.querySelector('.js-like-button').classList.toggle('cornflowerblue');
     })
 
     const CONTAINER = document.getElementById('container');
