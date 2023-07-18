@@ -62,6 +62,7 @@ const POSTS = [
 //togliere l'href="#" al pulsante
 
 let miniCounter = 0;
+const LIKED_POSTS = [];
 
 POSTS.forEach(post => {
     const NEW_POST = document.createElement('div');
@@ -103,7 +104,14 @@ POSTS.forEach(post => {
         miniCounter++;
         console.log(miniCounter);   //così, tanto per. Check localStorage per farlo rimanere
 
-        NEW_POST.querySelector('.js-like-button').classList.toggle('cornflowerblue');
+        NEW_POST.querySelector('.js-like-button').classList.toggle('cornflowerblue'); 
+
+        if (!LIKED_POSTS.includes(post.id)) {
+            LIKED_POSTS.push(post.id);
+        } else {
+            LIKED_POSTS.splice((post.id - 1), 1);
+        }
+        console.log(LIKED_POSTS);
     })
 
     const CONTAINER = document.getElementById('container');
