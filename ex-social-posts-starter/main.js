@@ -1,4 +1,4 @@
-const posts = [
+const POSTS = [
     {
         "id": 1,
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
@@ -55,3 +55,9 @@ const posts = [
         "created": "2021-03-05"
     }
 ];
+
+//
+
+POSTS.forEach(post => {
+    const NEW_POST = document.createElement('div');
+})
